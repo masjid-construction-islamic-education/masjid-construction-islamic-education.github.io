@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -12,12 +11,7 @@
             box-sizing: border-box;
             -webkit-tap-highlight-color: transparent;
         }
-
-        html,
-        body {
-            background: #ffffff;
-        }
-
+        html, body { background: #ffffff; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             color: #111;
@@ -27,7 +21,6 @@
             justify-content: center;
             padding: 24px 16px;
         }
-
         .card {
             width: 100%;
             max-width: 400px;
@@ -38,143 +31,34 @@
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
             border: 1px solid #f0f0f0;
         }
-
-        h1 {
-            font-size: 19px;
-            line-height: 1.4;
-            font-weight: 700;
-            margin-bottom: 22px;
-        }
-
-        .qr-wrap {
-            display: inline-flex;
-            padding: 14px;
-            border-radius: 16px;
-            border: 1px solid #eee;
-            background: #fff;
-        }
-
-        /* Yahan image ka path change kiya gaya hai */
-        .qr-wrap img {
-            width: 196px;
-            height: 196px;
-            display: block;
-            object-fit: contain;
-        }
-
-        .owner {
-            margin-top: 16px;
-        }
-
-        .owner .name {
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 0.2px;
-        }
-
-        .owner .sub {
-            margin-top: 4px;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #9a9a9a;
-        }
-
-        .upi-row {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #f2f2f2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .upi-row .label {
-            width: 100%;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #9a9a9a;
-            margin-bottom: 2px;
-        }
-
-        .upi-id {
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 0.2px;
-        }
-
-        .copy-btn {
-            border: 1px solid #e5e5e5;
-            background: #fff;
-            padding: 6px 12px;
-            border-radius: 8px;
-            font-size: 12px;
-            font-weight: 600;
-            color: #111;
-            cursor: pointer;
-        }
-
-        .copy-btn.copied {
-            color: #0a8f3c;
-            border-color: #b8e6c9;
-        }
-
-        .apps {
-            margin-top: 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .app-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            width: 100%;
-            padding: 11px 16px;
-            border-radius: 12px;
-            border: 1px solid #ececec;
-            background: #fff;
-            color: #111;
-            font-size: 15px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: transform .08s ease, background .15s ease;
-        }
-
-        .app-btn:active {
-            transform: scale(0.985);
-            background: #fafafa;
-        }
-
-        .brand {
-            width: 26px;
-            height: 26px;
-            flex-shrink: 0;
-            display: block;
-        }
+        h1 { font-size: 19px; line-height: 1.4; font-weight: 700; margin-bottom: 22px; }
+        .qr-wrap { display: inline-flex; padding: 14px; border-radius: 16px; border: 1px solid #eee; background: #fff; }
+        .qr-wrap img { width: 196px; height: 196px; display: block; object-fit: contain; }
+        .owner { margin-top: 16px; }
+        .owner .name { font-size: 16px; font-weight: 700; letter-spacing: 0.2px; }
+        .owner .sub { margin-top: 4px; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #9a9a9a; }
+        .upi-row { margin-top: 20px; padding-top: 20px; border-top: 1px solid #f2f2f2; display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .upi-row .label { width: 100%; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #9a9a9a; margin-bottom: 2px; }
+        .upi-id { font-size: 16px; font-weight: 700; letter-spacing: 0.2px; }
+        .copy-btn { border: 1px solid #e5e5e5; background: #fff; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-weight: 600; color: #111; cursor: pointer; }
+        .copy-btn.copied { color: #0a8f3c; border-color: #b8e6c9; }
+        .apps { margin-top: 24px; display: flex; flex-direction: column; gap: 10px; }
+        .app-btn { display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; padding: 11px 16px; border-radius: 12px; border: 1px solid #ececec; background: #fff; color: #111; font-size: 15px; font-weight: 600; text-decoration: none; transition: transform .08s ease, background .15s ease; cursor: pointer; }
+        .app-btn:active { transform: scale(0.985); background: #fafafa; }
+        .brand { width: 26px; height: 26px; flex-shrink: 0; display: block; }
     </style>
 </head>
-
 <body>
 
     <main class="card">
         <h1>🕌 Support Masjid Construction &amp; Islamic Education 📖🤲</h1>
 
         <div class="qr-wrap">
-            <!-- Aapke folder ke hisaab se path set kar diya gaya hai -->
             <img id="qrImage" src="images/mdqr.jpeg" alt="Scan to donate via UPI" />
         </div>
 
         <div class="owner">
-            <div class="name" id="ownerName">Mohammed Imran Saeed
-            </div>
+            <div class="name" id="ownerName">Mohammed Imran Saeed</div>
             <div class="sub">Account Holder</div>
         </div>
 
@@ -185,36 +69,33 @@
         </div>
 
         <div class="apps">
+            <!-- Paytm Button -->
             <a class="app-btn" id="paytmBtn" href="#">
                 <svg class="brand" viewBox="0 0 32 32" aria-hidden="true">
                     <rect width="32" height="32" rx="8" fill="#00BAF2" />
-                    <text x="16" y="22.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800"
-                        fill="#fff" text-anchor="middle">P</text>
+                    <text x="16" y="22.5" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">P</text>
                 </svg>
                 Pay with Paytm
             </a>
 
+            <!-- PhonePe Button -->
             <a class="app-btn" id="phonepeBtn" href="#">
                 <svg class="brand" viewBox="0 0 32 32" aria-hidden="true">
                     <rect width="32" height="32" rx="8" fill="#5F259F" />
-                    <text x="16" y="21.5" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800"
-                        fill="#fff" text-anchor="middle">पे</text>
+                    <text x="16" y="21.5" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">पे</text>
                 </svg>
                 Pay with PhonePe
             </a>
 
+            <!-- Google Pay Button -->
             <a class="app-btn" id="gpayBtn" href="#">
                 <svg class="brand" viewBox="0 0 32 32" aria-hidden="true">
                     <rect x="0.5" y="0.5" width="31" height="31" rx="7.5" fill="#fff" stroke="#e8e8e8" />
                     <g transform="translate(4 4) scale(0.5)">
-                        <path fill="#EA4335"
-                            d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
-                        <path fill="#4285F4"
-                            d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
-                        <path fill="#FBBC05"
-                            d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
-                        <path fill="#34A853"
-                            d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
+                        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
+                        <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
+                        <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
+                        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
                     </g>
                 </svg>
                 Pay with Google Pay
@@ -224,20 +105,17 @@
 
     <script>
         const upiId = "7485019664@mbk";
-        const payeeName = "Mohammed Imran Saeed"; // QR owner ka naam
-        const amount = "";                // "100" = fixed amount, "" = user enters
+        const payeeName = "Mohammed Imran Saeed"; 
+        const amount = ""; // Amount khali hai, user apni marzi se daal sakega
 
-        document.getElementById("ownerName").textContent = payeeName;
-        document.getElementById("upiId").textContent = upiId;
-
-        // QR image load error fallback
+        // QR Image Error Handling
         const qrImg = document.getElementById("qrImage");
         qrImg.addEventListener("error", () => {
             qrImg.alt = "QR not found — UPI ID copy karein";
             qrImg.style.opacity = "0.15";
         });
 
-        // Copy UPI ID
+        // Copy Button Logic
         const copyBtn = document.getElementById("copyBtn");
         copyBtn.addEventListener("click", async () => {
             try { await navigator.clipboard.writeText(upiId); }
@@ -254,18 +132,41 @@
             setTimeout(() => { copyBtn.textContent = "Copy"; copyBtn.classList.remove("copied"); }, 1500);
         });
 
-        // Deep links for payment apps
-        const params =
-            `pa=${encodeURIComponent(upiId)}` +
-            `&pn=${encodeURIComponent(payeeName)}` +
-            `&cu=INR` +
-            (amount ? `&am=${encodeURIComponent(amount)}` : "");
+        // Payment Links Setup
+        const params = `pa=${encodeURIComponent(upiId)}&pn=${encodeURIComponent(payeeName)}&cu=INR${amount ? '&am=' + amount : ''}`;
+        
+        const genericUpi = `upi://pay?${params}`;
+        const paytmLink = `paytmmp://pay?${params}`;
+        const phonepeLink = `phonepe://pay?${params}`;
+        const gpayLink = `tez://upi/pay?${params}`;
 
-        document.getElementById("paytmBtn").href = `paytmmp://pay?${params}`;
-        document.getElementById("phonepeBtn").href = `phonepe://pay?${params}`;
-        document.getElementById("gpayBtn").href = `tez://upi/pay?${params}`;
+        // Function to open apps (Mobile only)
+        function openPaymentApp(appLink) {
+            // Check if user is on mobile
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                window.location.href = appLink;
+            } else {
+                alert("Kripya is link ko Mobile Phone me kholiye. Payment apps sirf mobile me kaam karte hain.");
+            }
+        }
+
+        // Click Events for Buttons
+        document.getElementById("paytmBtn").addEventListener("click", (e) => {
+            e.preventDefault();
+            openPaymentApp(paytmLink);
+        });
+
+        document.getElementById("phonepeBtn").addEventListener("click", (e) => {
+            e.preventDefault();
+            openPaymentApp(phonepeLink);
+        });
+
+        document.getElementById("gpayBtn").addEventListener("click", (e) => {
+            e.preventDefault();
+            openPaymentApp(gpayLink);
+        });
     </script>
-
 </body>
-
 </html>
