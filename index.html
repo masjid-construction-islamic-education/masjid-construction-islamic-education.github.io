@@ -61,7 +61,6 @@
             object-fit: contain;
         }
 
-        /* Download Button Style */
         .download-btn {
             display: inline-flex;
             align-items: center;
@@ -74,11 +73,7 @@
             border: 1px solid #e5e5e5;
             padding: 6px 14px;
             border-radius: 8px;
-            transition: background 0.2s;
-        }
-
-        .download-btn:active {
-            background: #f5f5f5;
+            background: #fff;
         }
 
         .download-btn svg {
@@ -147,6 +142,7 @@
         .copy-btn.copied {
             color: #0a8f3c;
             border-color: #b8e6c9;
+            background: #f0fdf4;
         }
 
         .apps {
@@ -162,7 +158,7 @@
             justify-content: center;
             gap: 12px;
             width: 100%;
-            padding: 11px 16px;
+            padding: 12px 16px;
             border-radius: 12px;
             border: 1px solid #ececec;
             background: #fff;
@@ -196,7 +192,6 @@
             <img id="qrImage" src="images/mdqr.jpeg" alt="Scan to donate via UPI" />
         </div>
 
-        <!-- Download QR Button -->
         <br>
         <a href="images/mdqr.jpeg" download="Masjid_Donation_QR.jpeg" class="download-btn">
             <svg viewBox="0 0 24 24">
@@ -217,9 +212,7 @@
         </div>
 
         <div class="apps">
-            <!-- Direct App Links (Mobile par direct khulega) -->
-
-            <!-- Paytm -->
+            <!-- Direct App Links without any JavaScript -->
             <a class="app-btn" href="paytmmp://pay?pa=7485019664@mbk&pn=Mohammed%20Imran%20Saeed&cu=INR">
                 <svg class="brand" viewBox="0 0 32 32" aria-hidden="true">
                     <rect width="32" height="32" rx="8" fill="#00BAF2" />
@@ -229,7 +222,6 @@
                 Pay with Paytm
             </a>
 
-            <!-- PhonePe -->
             <a class="app-btn" href="phonepe://pay?pa=7485019664@mbk&pn=Mohammed%20Imran%20Saeed&cu=INR">
                 <svg class="brand" viewBox="0 0 32 32" aria-hidden="true">
                     <rect width="32" height="32" rx="8" fill="#5F259F" />
@@ -239,7 +231,6 @@
                 Pay with PhonePe
             </a>
 
-            <!-- Google Pay -->
             <a class="app-btn" href="tez://upi/pay?pa=7485019664@mbk&pn=Mohammed%20Imran%20Saeed&cu=INR">
                 <svg class="brand" viewBox="0 0 32 32" aria-hidden="true">
                     <rect x="0.5" y="0.5" width="31" height="31" rx="7.5" fill="#fff" stroke="#e8e8e8" />
@@ -257,21 +248,20 @@
                 Pay with Google Pay
             </a>
 
-            <!-- Other UPI Apps -->
+            <!-- Universal UPI Link (Opens app chooser in mobile) -->
             <a class="app-btn" href="upi://pay?pa=7485019664@mbk&pn=Mohammed%20Imran%20Saeed&cu=INR"
-                style="background: #f8f9fa; border-color: #d1d5db; margin-top: 5px;">
+                style="background: #f0fdf4; border-color: #bbf7d0; margin-top: 5px; color: #166534;">
                 <svg class="brand" viewBox="0 0 32 32" aria-hidden="true">
-                    <rect width="32" height="32" rx="8" fill="#4B5563" />
+                    <rect width="32" height="32" rx="8" fill="#22c55e" />
                     <text x="16" y="22" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#fff"
                         text-anchor="middle">₹</text>
                 </svg>
-                Pay with Other UPI App
+                Open All UPI Apps
             </a>
         </div>
     </main>
 
     <script>
-        // Copy UPI ID Function
         const upiId = "7485019664@mbk";
         const copyBtn = document.getElementById("copyBtn");
 
@@ -291,7 +281,7 @@
             setTimeout(() => {
                 copyBtn.textContent = "Copy";
                 copyBtn.classList.remove("copied");
-            }, 1500);
+            }, 2000);
         });
     </script>
 </body>
